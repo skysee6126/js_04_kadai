@@ -1,0 +1,129 @@
+:root {
+  --text-color: rgb(240, 243, 250);
+  --background-color: rgba(74, 105, 189,1.0);
+  --accent-color: rgba(255, 107, 107,1.0);
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  background-color: var(--text-color);
+  display: flex;
+}
+
+.panel {
+  color: var(--text-color);
+  width: 30%;
+  height: 100vh;
+  background-image: url('img/1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: contain;
+  text-align: center;
+}
+
+.js-clock {
+  color: var(--accent-color);
+  font-size: 2rem;
+  opacity: 0.8;
+  padding-top: 100px;
+}
+
+.name-cover {
+ background-color: var(--background-color);
+ width: 80%;
+ margin: 5% auto;
+}
+
+.name{
+  font-weight: bold;
+}
+
+.todo {
+  margin: 10%;
+  background-color:  rgba(235, 240, 253, 0.3);
+  padding: 20px 0;
+}
+
+.js-toDoList {
+  text-align: left;
+}
+
+.js-toDoList a {
+  cursor: pointer;
+}
+
+
+.chat {
+  background-color: var(--text-color);
+  color: var(--background-color);
+  width: 100%;
+  margin: 2%;
+  position: relative;
+}
+
+.chat-window{
+  height: 85vh;
+  overflow-y: scroll;
+  background-color: rgb(255, 255, 255);
+  border-radius: 1%;
+  padding-bottom: 5%;
+}
+
+#messageForm{
+  background-color: var(--text-color);
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  padding: 1%;
+  width: 100%;
+}
+
+#msg-input{
+  padding: 10px;
+  width: 85%;
+}
+
+#msg-btn{
+  width: 9%;
+  padding: 9px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: var(--background-color);
+  font-size: large;
+  color: white;
+  font-weight: bold;
+  border: none;
+  margin-left: 1%;
+}
+
+#msg-btn:hover{
+  color:var(--text-color);
+  /* background-color: var(--accent-color); */
+}
+
+.msg-span{
+  display: inline-block;
+  padding:10px;
+  font-size: large;
+  color: black;
+  margin: 5px 5px 0px 0px;
+  text-align: left;
+}
+
+/*Scroll styling */
+
+/* width */
+#chat-window::-webkit-scrollbar {
+  width: 15px;
+  height: 100%;
+}
+
+
+#chat-window::-webkit-scrollbar-thumb {
+  background-color: var(--accent-color);
+}
